@@ -1,173 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrendWaveShop</title>
-    <style>
-        .lead {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Gallery with CSS Grid version 0.0.02</title>
+	<link rel="stylesheet" href="style/style.css">
 
-        .container {
-            margin: 50px auto 0 auto;
-            max-width: 960px;
-        }
-    </style>
 
-    <!--====== CSS ======-->
-    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <!-- main=section -->
-    <div class="container">
-        <h1 style="text-align: center;">Trend <span class="Wave">Wave</span>Shop</h1>
-        <div style="margin:20px auto">
-            <div id="carbon-block"></div>
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
-                crossorigin="anonymous"></script>
-            <!-- CSSScript Demo Page -->
-            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
-                data-ad-client="ca-pub-2783044520727903" data-ad-slot="3025259193"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+	<div class="container"><!--this is main container , contain whole project.-->
 
-    </div>
-    <!--====== Gallery Section ======-->
-    <section id="gallery">
-        <div class="container">
-            <ul class="gallery_tabs">
-                <li class="active" data-filter="all">All</li>
-                <li data-filter="camera">Cameras</li>
-                <li data-filter="laptop">Laptops</li>
-                <li data-filter="mobile">Mobiles</li>
-                <li data-filter="headphone">Headphones</li>
-            </ul>
+		<div class="menubar"><!--menu section. it contain logo and menu items-->
+			<h1 class="logo">EatEnclave</h1><!--it is logo-->
+			<div class="menu_items"><!--menu items-->
+				<div class="btn">
+					<p>10</p>
+				</div>
+				<div class="btn">
+					<p>20</p>
+				</div>
+				<div class="btn">
+					<p>50</p>
+				</div>
+				<div class="btn">
+					<p>100</p>
+				</div>
+				<div class="btn">
+					<p>200</p>
+				</div>
+				<div class="btn">
+					<p>500</p>
+				</div>
+			</div>
+		</div>
 
-            <div class="gallery_wrapper">
-                <div class="gallery_item camera">
-                    <img src="https://images.unsplash.com/photo-1585218356057-dc0e8d3558bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                        alt="img">
-                </div>
+		<div class="img_container grid"><!--container for image gallery-->
+			<div class="img_item row-2 col-3"><!--block of one image. contain image and title.-->
+				<a href="img/01.jpg "><img src="img/01.jpg" alt="hot pizza">
+					<p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+						eu fugiat nulla pariatur.</p>
+				</a>
+			</div>
+			<div class="img_item row-1 col-2"><a href="img/02.jpg"><img src="img/02.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-2 col-3"><a href="img/03.jpg"><img src="img/03.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-1 col-2"><a href="img/04.jpg"><img src="img/04.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-2 col-3"><a href="img/05.jpg"><img src="img/05.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-3 col-2"><a href="img/06.jpg"><img src="img/06.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-3 col-2"><a href="img/07.jpg"><img src="img/07.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-3 col-2"><a href="img/08.jpg"><img src="img/08.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-2 col-2"><a href="img/09.jpg"><img src="img/09.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-3 col-3"><a href="img/10.jpg"><img src="img/10.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-2 col-2"><a href="img/11.jpg"><img src="img/11.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-2 col-3"><a href="img/01.jpg"><img src="img/01.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-1 col-2"><a href="img/02.jpg"><img src="img/02.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-2 col-3"><a href="img/03.jpg"><img src="img/03.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-2"><a href="img/04.jpg"><img src="img/04.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-3 col-4"><a href="img/05.jpg"><img src="img/05.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-2 col-1"><a href="img/06.jpg"><img src="img/06.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-3 col-2"><a href="img/07.jpg"><img src="img/07.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-3 col-2"><a href="img/08.jpg"><img src="img/08.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-2 col-2"><a href="img/09.jpg"><img src="img/09.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-3 col-3"><a href="img/10.jpg"><img src="img/10.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-2 col-2"><a href="img/11.jpg"><img src="img/11.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-2 col-3"><a href="img/01.jpg"><img src="img/01.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-2"><a href="img/02.jpg"><img src="img/02.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-2 col-3"><a href="img/03.jpg"><img src="img/03.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-2"><a href="img/04.jpg"><img src="img/04.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/12.jpg"><img src="img/12.jpg" alt="hot pizza">
+					<p>this is title of photo</p>
+				</a></div>
+			<div class="img_item row-1 col-1"><a href="img/09.jpg"><img src="img/09.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/10.jpg"><img src="img/10.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/11.jpg"><img src="img/11.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/12.jpg"><img src="img/12.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/09.jpg"><img src="img/09.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/10.jpg"><img src="img/10.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/11.jpg"><img src="img/11.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/12.jpg"><img src="img/12.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/09.jpg"><img src="img/09.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/10.jpg"><img src="img/10.jpg" alt="hot pizza"></a></div>
+			<div class="img_item row-1 col-1"><a href="img/11.jpg"><img src="img/11.jpg" alt="hot pizza"></a></div>
 
-                <div class="gallery_item headphone">
-                    <img src="https://images.unsplash.com/photo-1599669454699-248893623440?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhlYWRwaG9uZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
 
-                <div class="gallery_item laptop">
-                    <img src="https://images.unsplash.com/photo-1602080858428-57174f9431cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGxhcHRvcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
+		</div>
 
-                <div class="gallery_item mobile">
-                    <img src="https://images.unsplash.com/photo-1596558450268-9c27524ba856?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW9iaWxlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item laptop">
-                    <img src="https://images.unsplash.com/photo-1559163499-413811fb2344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGxhcHRvcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item camera">
-                    <img src="https://images.unsplash.com/photo-1591533385361-f327d396db9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGNhbWVyYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item headphone">
-                    <img src="https://images.unsplash.com/photo-1610041321327-b794c052db27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhlYWRwaG9uZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item mobile">
-                    <img src="https://images.unsplash.com/photo-1557690267-fad2f168bb95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item laptop">
-                    <img src="https://images.unsplash.com/photo-1533740566848-5f7d3e04e3d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGxhcHRvcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item headphone">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item mobile">
-                    <img src="https://images.unsplash.com/photo-1551355738-1875b6664915?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bW9iaWxlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="img">
-                </div>
-
-                <div class="gallery_item camera">
-                    <img src="https://images.unsplash.com/photo-1515197304934-f95872d7156f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        alt="img">
-                </div>
-            </div>
-
-            <!-- Lightbox -->
-            <div class="lightbox">
-                <div class="lightbox_wrapper">
-                    <div class="lightbox_content">
-                        <img src="" class="lightbox_img" alt="lightbox-img">
-                    </div>
-                </div>
-                <div class="lightbox_close">
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer section -->
-    <footer class="footer-container">
-        <div class="footer-item">
-            <h1 class="footer-title">Trend<span class="title-color">Wave</span>Shop</h1>
-            <p class="footer-discription">It is a long established fact that a reader will be distracted by the readable
-                <br> content of a page when looking at its layout.
-            </p>
-            <p class="copy">@2020-2023, TrendWaveShop.com. All rights reserved. </p>
-
-        </div>
+		<div class="footer"> <!--foooter-->
+			<p>&copy EatEnclave</p>
+		</div>
+	</div>
 
 
 
 
-    </footer>
-
-    <!--====== JavaScript ======-->
-    <script src="./main.js"></script>
 </body>
-<script>
-    try {
-        fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
-            return true;
-        }).catch(function (e) {
-            var carbonScript = document.createElement("script");
-            carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
-            carbonScript.id = "_carbonads_js";
-            document.getElementById("carbon-block").appendChild(carbonScript);
-        });
-    } catch (error) {
-        console.log(error);
-    }
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-LLWL5N9CSM');
-</script>
 
 </html>
